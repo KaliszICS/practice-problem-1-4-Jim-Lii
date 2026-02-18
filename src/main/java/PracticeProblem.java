@@ -2,7 +2,7 @@
 Lesson: Input
 Author: Jim Li
 Date Created: Feb. 17, 2026
-Date Last Modified: Feb. 17, 2026
+Date Last Modified: Feb. 18, 2026
 */
 
 import java.util.Scanner;
@@ -30,7 +30,6 @@ public class PracticeProblem {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Input a whole number: ");
 		int num = input.nextInt();
-		input.nextLine();
 		System.out.println(num * 2 + 2);
 	}
 
@@ -39,7 +38,6 @@ public class PracticeProblem {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Input a radius: ");
 		Double rad = input.nextDouble();
-		input.nextLine();
 		System.out.println(rad * 2 * 3.14);
 		System.out.println(rad * rad * 3.14);
 	}
@@ -53,7 +51,6 @@ public class PracticeProblem {
 		String lastName = input.nextLine();
 		System.out.print("Input an age: ");
 		int age = input.nextInt();
-		input.nextLine();
 		System.out.println(lastName + ", " + firstName + " - " + age);
 	}
 
@@ -64,11 +61,10 @@ public class PracticeProblem {
 		String name = input.nextLine();
 		System.out.print("Input an age: ");
 		int age = input.nextInt();
-		input.nextLine();
 		int iq = age;
 		age += 3;
-		System.out.println(name);
-		System.out.print(age);
+		System.out.print(name);
+		System.out.println(age);
 		System.out.println(iq);
 	}
 
